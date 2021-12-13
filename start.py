@@ -26,47 +26,4 @@ else:
     pickle.dump(settings, settings_file)
     settings_file.close()
 
-#pygame setup
-display = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
-
-#///////////////////Sceens///////////////////
-def main_menu():
-    running = True
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-
-        pygame.display.update()
-
-def load_game_menu():
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-
-        pygame.display.update()
-
-def new_game_menu():
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-
-        pygame.display.update()
-
-def game_loop():
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-
-        pygame.display.update()
-
-#def render_menu()
-#///////////////Screens (Above)///////////////
-
-main_menu()
+os.system('code/loop.py')
